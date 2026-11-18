@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OptiSites · optimate.me</title>
+<meta name="description" content="OptiSites by optimate.me. Scale with software.">
+<link rel="icon" href="https://assets.optisync.me/cust/optimateme/emblem_standard.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+  :root { --dark-blue:#050850; --yellow:#fdb200; --lemon:#fff800; }
+  * { box-sizing:border-box; margin:0; }
+  html, body { height:100%; }
+  body {
+    min-height:100vh; display:flex; flex-direction:column; color:#fff;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:300;
+    background-color:var(--dark-blue);
+    background-image:
+      radial-gradient(ellipse at 0% 0%, #40d9e8 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 30%, #2125d9 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 0%, #6422cb 0%, transparent 50%),
+      radial-gradient(ellipse at 100% 100%, #c1331f 0%, transparent 50%),
+      linear-gradient(135deg, #050850 0%, #6422cb 50%, #c1331f 100%);
+    background-attachment:fixed;
+  }
+  header, footer { padding:32px clamp(16px, 5vw, 64px); }
+  header img { height:28px; display:block; }
+  main { flex:1; display:flex; flex-direction:column; justify-content:center; padding:0 clamp(16px, 5vw, 64px); max-width:960px; }
+  .eyebrow { text-transform:uppercase; letter-spacing:.18em; font-size:.8rem; font-weight:500; opacity:.85; margin-bottom:20px; }
+  h1 { font-family:'Archivo Black', 'Arial Black', sans-serif; font-weight:900; font-size:clamp(2.75rem, 9vw, 6.5rem); line-height:.95; letter-spacing:-.02em; }
+  h1 .dot { color:var(--lemon); }
+  p.lead { font-size:clamp(1.1rem, 2.2vw, 1.4rem); max-width:36ch; margin-top:24px; line-height:1.45; opacity:.92; }
+  a.cta { display:inline-block; margin-top:36px; padding:14px 26px; border-radius:999px; background:var(--yellow); color:var(--dark-blue); font-weight:700; text-decoration:none; align-self:flex-start; }
+  a.cta:hover, a.cta:focus-visible { background:#fff; outline:none; }
+  footer { font-size:.85rem; opacity:.75; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+  footer a { color:inherit; }
+</style>
+</head>
+<body>
+  <header>
+    <a href="https://optimate.me"><img src="https://assets.optisync.me/cust/optimateme/logo_white.svg" alt="optimate.me"></a>
+  </header>
+  <main>
+    <div class="eyebrow">OptiSites</div>
+    <h1>Scale with software<span class="dot">.</span></h1>
+    <p class="lead">Something new is on the way from optimate.me. Optimise. Automate. Grow.</p>
+    <a class="cta" href="https://optimate.me">Visit optimate.me</a>
+  </main>
+  <footer>
+    <span>&copy; <span id="y">2026</span> optimate.me</span>
+    <span>Auckland &middot; Brisbane</span>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
